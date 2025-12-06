@@ -1,3 +1,9 @@
+/*********************************************
+ Jhoan Nicolas Sanchez Aguilar 
+ nic3n1217@gmail.com
+ Laboratorio 5 
+*********************************************/
+
 #include <iostream>
 #include <string>
 #include "colors.h"
@@ -6,6 +12,11 @@
 using namespace std;
 
 void mayor_de_ten () {
+/*********************************************
+ Jhoan Nicolas Sanchez Aguilar 
+ nic3n1217@gmail.com
+ Laboratorio 5 - punto 1
+*********************************************/
     double valor;
     cout << "ingrese un valor numerico: ";
     if (cin >> valor) {
@@ -32,6 +43,11 @@ void mayor_de_ten () {
     }
 
     void cal_let (){
+/*********************************************
+ Jhoan Nicolas Sanchez Aguilar 
+ nic3n1217@gmail.com
+ Laboratorio 5 - punto 2
+*********************************************/
         double cal;
         char cal_let;
         cout << "Ingresa la nota obtenida (decimales) :";
@@ -77,27 +93,32 @@ void mayor_de_ten () {
 }
      
 void tipos_de_datos () {
+/*********************************************
+ Jhoan Nicolas Sanchez Aguilar 
+ nic3n1217@gmail.com
+ Laboratorio 5 - punto 3
+*********************************************/
     char letra ;
     int num;
     bool capt_num;
     bool capt_char;
 
-    cout << "ingrese un caracter: " << endl;
+    cout << "ingrese un caracter: ";
     cin >> letra;
     cin.ignore(10000, '\n');
-    cout << "ingrese un numero entero: " << endl;
+    cout << "ingrese un numero entero: ";
     if (cin >> num) {
         if (letra >= 'a' && letra <= 'z') {
-            cout << "El caracter ingresado es una letra minuscula: " << letra << endl;
+            cout << '\n' << "El caracter ingresado es una letra minuscula: " << letra << endl;
         }
         else if (letra >= 'A' && letra <= 'Z') {
-            cout << "El caracter ingresado es una letra mayuscula: " << letra << endl;
+            cout << '\n' << "El caracter ingresado es una letra mayuscula: " << letra << endl;
         }
         else if (letra >= '0' && letra <= '9') {
-            cout << "El caracter ingresado es un digito: " << letra << endl;
+            cout << '\n' << "El caracter ingresado es un digito: " << letra << endl;
         }
         else {
-            cout << "El caracter ingresado es un simbolo: " << letra << endl;
+            cout << '\n' << "El caracter ingresado es un simbolo: " << letra << endl;
         }
         cout << "El numero entero ingresado es: " << num << endl;
 
