@@ -76,7 +76,61 @@ void mayor_de_ten () {
 
 }
      
+void tipos_de_datos () {
+    char letra ;
+    int num;
+    bool capt_num;
+    bool capt_char;
 
+    cout << "ingrese un caracter: " << endl;
+    cin >> letra;
+    cin.ignore(10000, '\n');
+    cout << "ingrese un numero entero: " << endl;
+    if (cin >> num) {
+        if (letra >= 'a' && letra <= 'z') {
+            cout << "El caracter ingresado es una letra minuscula: " << letra << endl;
+        }
+        else if (letra >= 'A' && letra <= 'Z') {
+            cout << "El caracter ingresado es una letra mayuscula: " << letra << endl;
+        }
+        else if (letra >= '0' && letra <= '9') {
+            cout << "El caracter ingresado es un digito: " << letra << endl;
+        }
+        else {
+            cout << "El caracter ingresado es un simbolo: " << letra << endl;
+        }
+        cout << "El numero entero ingresado es: " << num << endl;
+
+    }
+    else {
+        cout << "\x1b[2J\x1b[H" ;
+        cout << RED << "El valor ingresado no es valido" << RESET << endl;
+        cin.clear();
+        cin.ignore(10000, '\n');
+    }
+
+    if (num < 0) {
+        cout << "El numero es negativo." << endl;
+    }
+    else if (num == 0) {
+        cout << "El numero es cero." << endl;
+    }
+    else {
+        cout << "El numero es positivo." << endl;
+
+    }
+    if (num > 100) {
+        cout << "El numero es mayor que 100." << endl;
+    }
+    else {
+        cout << "El numero es menor o igual que 100." << endl;
+    }
+
+
+    
+    
+    
+}    
 
 int main() {
 
@@ -117,7 +171,7 @@ int main() {
             break;
         }
         case 3: {
-            cout << "3" << endl;
+            tipos_de_datos();
             break;
         }
         case 4: {
